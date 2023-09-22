@@ -1,5 +1,4 @@
 import Navbar from "../Navbar/Navbar"
-import style from './layout.module.css'
 
 type Props = {
     children: React.ReactNode;
@@ -7,10 +6,17 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }) => {
     return (
-        <div className={style.container}>
-            <Navbar />
+        <div>
+            <Navbar  />
             {children}
-            <footer>This is the footer</footer>
+            <footer className="container">This is the footer</footer>
+            <style jsx>
+               {`
+               .container {
+                background: salmon
+               }
+               `}
+            </style>
         </div>
     )
 }
