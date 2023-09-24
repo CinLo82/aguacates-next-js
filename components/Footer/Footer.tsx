@@ -45,12 +45,9 @@ const Footer = () => (
     <style jsx>{`
         .colophon {
             text-align: center;
-            font-size: 0.8rem;
-            padding: 1.2rem;
-            background: grey
+            font-size: 0.8rem;   
         }
         .colophon-entry {
-            color: white;
             margin-bottom: 0;
         }
     `}</style>
